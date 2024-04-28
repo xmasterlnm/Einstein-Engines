@@ -59,17 +59,6 @@
             - material: Gold
               amount: 4
               doAfter: 5
-        - to: satana
-          completed:
-            - !type:SnapToGrid
-          steps:
-            - material: Plasteel
-              amount: 10
-            - material: Bluespace
-              amount: 3
-            - material: Gold
-              amount: 4
-              doAfter: 5
         - to: technology
           completed:
             - !type:SnapToGrid
@@ -217,9 +206,6 @@
 
     - node: spacechristian
       entity: AltarSpaceChristian
-
-    - node: satana
-      entity: AltarSatana
 
     - node: technology
       entity: AltarTechnology

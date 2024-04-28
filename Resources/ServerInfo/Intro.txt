@@ -1,8 +1,5 @@
-Welcome to Space Station 14! You have just started your shift aboard a Nanotrasen space station and along with your crewmates should cooperate, perform your job role to the best of your ability and have fun (not at the expense of others hopefully).
+WELCOME TO BASEDSTATION 14!
 
-Please make sure you understand the server rules (F1) and if you have any questions, consult this guide, your colleagues on shift in person or over radio or via discord. You can also ask admins for help (ahelp) by hitting the escape key > admin help and typing a message to any online admins. Especially do this if you witness someone breaking rules.
+[color=#ff0000]Welcome to a totally new kind of server. Both anarchy and tyranny, but in potential - a potential determined by the players. [/color]
 
-To reiterate, you are all a crew of people who work together (even the clown) and you should not be harming each other unless you have an extremely good reason (self defence) and even then, call security over radio, stun and detain, do not commit murder as a non antagonist (see antagonist further down).
-
-
-Instead of intents, we have combat mode. Check controls below for its keybind. You can't attack anybody with it off, so no more hitting yourself with your own crowbar.
+Here at Basedstation 14 we pride ourselves on our unique vision offering a dynamic gameplay experience which varies each round, due to hands-off administration. Will you create order and build a new society and livelihood amidst the stars, or will you contribute to the degeneracy and decay which plagues the stations of Nanotrasen? It is up to you. Declare independence, form a dictatorship, start a revolution, or preserve the order with creative policies, procedures, and rules within your department - it is up to YOU, the player, to make the experience an enjoyable and interesting one, and we give you the breathing room to make your adventure amidst the stars!

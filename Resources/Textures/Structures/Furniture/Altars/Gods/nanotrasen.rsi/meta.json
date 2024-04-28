@@ -23,7 +23,7 @@
       "name": "technology"
     },
     {
-      "name": "satana"
+      "name": "stan"
     },
     {
       "name": "toolbox"
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "name": "satana_lightning",
+      "name": "stan_lightning",
       "delays": [
         [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
       ]

@@ -137,27 +137,27 @@
     graph: Altar
     node: spacechristian
 
-- type: entity
-  id: AltarSatana
-  parent: AltarNanotrasen
-  name: satanic altar
-  components:
-  - type: Sprite
-    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
-    layers:
-    - state: satana
-    - state: satana_lightning
-      shader: unshaded
-  - type: Icon
-    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
-    state: satana
-  - type: PointLight
-    radius: 1.5
-    energy: 1
-    color: "#ff6347"
-  - type: Construction #Nyano
-    graph: Altar
-    node: satana
+# - type: entity
+#  id: AltarSatana
+#  parent: AltarNanotrasen
+#  name: satanic altar
+#  components:
+#  - type: Sprite
+#    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+#    layers:
+#    - state: satana
+#    - state: satana_lightning
+#      shader: unshaded
+#  - type: Icon
+#    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+#    state: satana
+#  - type: PointLight
+#    radius: 1.5
+#    energy: 1
+#    color: "#ff6347"
+#  - type: Construction #Nyano
+#    graph: Altar
+#    node: satana
 
 - type: entity
   id: AltarTechnology

@@ -83,22 +83,22 @@
   conditions:
     - !type:TileNotBlocked
 
-- type: construction
-  name: satanic altar
-  id: AltarSatana
-  graph: Altar
-  startNode: start
-  targetNode: satana
-  category: construction-category-furniture
-  description: Altar of the Gods. Those with some divine potential can sacrifice psionics on top of it.
-  icon:
-    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
-    state: satana
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
+#- type: construction
+#  name: satanic altar
+#  id: AltarSatana
+#  graph: Altar
+#  startNode: start
+#  targetNode: satana
+#  category: construction-category-furniture
+#  description: Altar of the Gods. Those with some divine potential can sacrifice psionics on top of it.
+#  icon:
+#    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
+#    state: satana
+#  objectType: Structure
+#  placementMode: SnapgridCenter
+#  canBuildInImpassable: false
+#  conditions:
+#    - !type:TileNotBlocked
 
 - type: construction
   name: technology altar

@@ -1,3 +1,3 @@
-advertisement-pride-1 = Be gay do crime!
-advertisement-pride-2 = Full of colors!
-advertisement-pride-3 = You are valid!
+advertisement-pride-1 = СЛАВА БОГ!
+advertisement-pride-2 = Viva Christo rey!
+advertisement-pride-3 = Glory to God!
