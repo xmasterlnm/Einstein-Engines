@@ -1036,6 +1036,24 @@
   name: BODA
   description: An old vending machine containing sweet water.
   components:
+  - type: DrainableSolution
+    solution: tank
+  - type: ExaminableSolution
+    solution: tank
+  - type: ReagentTank
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: SodaWater
+          Quantity: 500
+  - type: ContainerContainer
+    containers:
+      bin-container: !type:Container
+  - type: Bin
+    initialContents:
+    - DrinkShotGlass
+    maxItems: 1
   - type: VendingMachine
     pack: BodaInventory
     dispenseOnHitChance: 0.25
