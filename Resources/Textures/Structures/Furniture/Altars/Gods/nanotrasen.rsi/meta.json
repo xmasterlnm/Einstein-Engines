@@ -23,21 +23,12 @@
       "name": "technology"
     },
     {
-      "name": "stan"
-    },
-    {
       "name": "toolbox"
     },
     {
       "name": "technology_lightning",
       "delays": [
         [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
-      ]
-    },
-    {
-      "name": "stan_lightning",
-      "delays": [
-        [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
       ]
     },
     {
