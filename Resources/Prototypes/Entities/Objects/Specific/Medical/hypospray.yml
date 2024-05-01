@@ -413,7 +413,7 @@
     onlyMobs: false
   - type: UseDelay
     delay: 0.5
-  - type: StaticPrice # A new shitcurity meta
+  - type: StaticPrice # A new security meta
     price: 75
 
 - type: entity
