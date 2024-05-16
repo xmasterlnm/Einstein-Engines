@@ -5,10 +5,8 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Masonator;
 
 //COMPONENTS
-[RegisterComponent, NetworkedComponent]
-//Empty Component to mark console
-
-public sealed partial class BankingConsoleComponent : Component
+[RegisterComponent, NetworkedComponent, Serializable, NetSerializable]
+public sealed partial class BankingConsoleComponent : Component //Empty Component to mark console
 {
 }
 //SUPPLEMENTARY DATA STRUCTURES
