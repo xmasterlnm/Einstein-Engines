@@ -11,7 +11,7 @@ using Robust.Shared.Prototypes;
 using static Robust.Client.UserInterface.Controls.BaseButton;
 
 
-namespace Content.Client.Masonator;
+namespace Content.Client.Masonator.UI;
 
 public sealed partial class BankingComputerWindow : FancyWindow
 {

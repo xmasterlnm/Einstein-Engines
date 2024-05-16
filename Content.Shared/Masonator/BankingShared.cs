@@ -6,9 +6,10 @@ namespace Content.Shared.Masonator;
 
 //COMPONENTS
 [RegisterComponent, NetworkedComponent]
-public sealed partial class BankingConsoleComponent : Component //Empty Component to mark console
-{
+//Empty Component to mark console
 
+public sealed partial class BankingConsoleComponent : Component
+{
 }
 //SUPPLEMENTARY DATA STRUCTURES
 [Serializable, NetSerializable]
@@ -25,6 +26,7 @@ public sealed class BankAccount
         balances = initBalances;
     }
 }
+[Serializable, NetSerializable]
 public sealed partial class BankAccountMessage : BoundUserInterfaceMessage
 {
     public BankAccount account;
