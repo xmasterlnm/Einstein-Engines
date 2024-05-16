@@ -1,0 +1,14 @@
+<controls:FancyWindow   xmlns="https://spacestation14.io"
+                        xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                        xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                        HorizontalExpand="True"
+                        VerticalExpand="True">
+    <BoxContainer Orientation="Vertical">
+        <LineEdit Name="Inspected" Access="Public" PlaceHolder="none"/>
+        <LineEdit Name="Password" Access="Public" PlaceHolder="none"/>
+        <Button Name="DeleteButton" Access="Public" Text="Delete Account"/>
+        <Button Name="RatifyButton" Access="Public" Text="Ratify Account"/>
+    </BoxContainer>
+    <BoxContainer Name="RowHolder" Orientation="Horizontal">
+    </BoxContainer>
+</controls:FancyWindow>

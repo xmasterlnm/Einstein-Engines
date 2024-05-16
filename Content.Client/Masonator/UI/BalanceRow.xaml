@@ -1,0 +1,44 @@
+<PanelContainer xmlns="https://spacestation14.io"
+                HorizontalExpand="True">
+    <BoxContainer Orientation="Horizontal"
+                  HorizontalExpand="True">
+        <TextureRect Name="Icon"
+                     Access="Public"
+                     MinSize="32 32"
+                     RectClipContent="True" />
+        <BoxContainer Orientation="Vertical"
+                      HorizontalExpand="True"
+                      VerticalExpand="True">
+            <LineEdit Name="CurrencyName"
+                   Access="Public"
+                   HorizontalExpand="True"
+                   StyleClasses="LabelSubText"
+                   ClipText="True" />
+            <BoxContainer Orientation="Horizontal">
+                <LineEdit Name="Quantity"
+                        PlaceHolder="Quantity"
+                        Access="Public"
+                        HorizontalExpand="True"
+                        StyleClasses="LabelSubText"
+                        ClipText="True" />
+                <LineEdit Name="AddSubtract"
+                        Access="Public"
+                        HorizontalExpand="True"
+                        StyleClasses="LabelSubText"
+                        ClipText="True" />
+            </BoxContainer>
+        </BoxContainer>
+        <Button Name="Ratify"
+                Access="Public"
+                Text="Ratify"
+                StyleClasses="LabelSubText" />
+        <Button Name="Print"
+                Access="Public"
+                Text="Print"
+                StyleClasses="LabelSubText" />
+        <Button Name="Remove"
+                Access="Public"
+                Text="Remove"
+                StyleClasses="LabelSubText" />
+    </BoxContainer>
+</PanelContainer>

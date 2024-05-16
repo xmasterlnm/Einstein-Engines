@@ -11,6 +11,7 @@
     - type: StationBankAccount
     - type: StationCargoOrderDatabase
     - type: StationCargoBountyDatabase
+    - type: StationBankingDatabaseComponent
 
 - type: entity
   id: BaseStationJobsSpawning

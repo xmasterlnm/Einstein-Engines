@@ -1,0 +1,28 @@
+- type: entity
+  parent: BaseComputer
+  id: ComputerStationBank
+  name: station banking console
+  description: Handles the creation and elimination of station bank accounts.
+  components:
+  - type: AccessReader
+    access:
+    - [["HeadOfPersonnel"]]
+  - type: BankingConsole
+  - type: ActivatableUI
+    key: enum.EmergencyConsoleUiKey.BankingConsoleBoundUserInterface
+  - type: UserInterface
+    interfaces:
+      - key: enum.MasonomicsUiKey.BankingConsoleBoundUserInterface
+        type: BankingConsoleBoundUserInterface
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#43ccb5"
+  - type: Rotatable
+    rotateWhileAnchored: true
+
+- type: entity
+  id: BankAccountMasonTest
+  abstract: true
+  components:
+    - type: StationBankAccount

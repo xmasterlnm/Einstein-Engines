@@ -1,0 +1,33 @@
+<PanelContainer xmlns="https://spacestation14.io"
+                HorizontalExpand="True">
+    <BoxContainer Orientation="Horizontal"
+                  HorizontalExpand="True">
+        <TextureRect Name="Icon"
+                     Access="Public"
+                     MinSize="32 32"
+                     RectClipContent="True" />
+        <BoxContainer Orientation="Vertical"
+                      HorizontalExpand="True"
+                      VerticalExpand="True">
+            <Label Name="AccountSummary"
+                   Access="Public"
+                   HorizontalExpand="True"
+                   VerticalExpand="True"
+                   StyleClasses="LabelSubText"
+                   ClipText="True" />
+            <Label Name="AccountDescription"
+                   Access="Public"
+                   HorizontalExpand="True"
+                   StyleClasses="LabelSubText"
+                   ClipText="True" />
+        </BoxContainer>
+        <Button Name="Inspect"
+                Access="Public"
+                Text="Inspect"
+                StyleClasses="LabelSubText" />
+        <Button Name="Delete"
+                Access="Public"
+                Text="{Loc 'cargo-console-menu-cargo-order-row-cancel-button'}"
+                StyleClasses="LabelSubText" />
+    </BoxContainer>
+</PanelContainer>
