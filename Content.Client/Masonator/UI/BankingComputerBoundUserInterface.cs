@@ -10,7 +10,7 @@ using Robust.Shared.Utility;
 using SixLabors.ImageSharp.Memory;
 using static Robust.Client.UserInterface.Controls.BaseButton;
 
-namespace Content.Client.Masonator;
+namespace Content.Client.Masonator.UI;
 
 public sealed partial class BankingComputerBoundUserInterface : BoundUserInterface
 {
