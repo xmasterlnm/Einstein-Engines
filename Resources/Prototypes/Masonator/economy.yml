@@ -4,16 +4,28 @@
   name: station banking console
   description: Handles the creation and elimination of station bank accounts.
   components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: request
+    - map: ["computerLayerKeys"]
+      state: tech_key
   - type: AccessReader
     access:
     - [["HeadOfPersonnel"]]
   - type: BankingConsole
   - type: ActivatableUI
-    key: enum.EmergencyConsoleUiKey.BankingConsoleBoundUserInterface
+    key: enum.MasonomicsUiKey.BankingComputerBoundUserInterface
   - type: UserInterface
     interfaces:
-      - key: enum.MasonomicsUiKey.BankingConsoleBoundUserInterface
-        type: BankingConsoleBoundUserInterface
+    - key: enum.MasonomicsUiKey.BankingComputerBoundUserInterface
+      type: BankingComputerBoundUserInterface
+  - type: Computer
+    board: BankingComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -21,8 +33,19 @@
   - type: Rotatable
     rotateWhileAnchored: true
 
+- type: latheRecipe
+  id: BankingComputerCircuitboard
+  result: RadarConsoleCircuitboard
+  category: Circuitry
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900
+
 - type: entity
-  id: BankAccountMasonTest
-  abstract: true
+  parent: BaseComputerCircuitboard
+  id: BankingComputerCircuitboard
+  name: banking computer board
   components:
-    - type: StationBankAccount
+  - type: ComputerBoard
+    prototype: ComputerRadar

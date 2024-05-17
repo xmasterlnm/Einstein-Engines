@@ -7,7 +7,7 @@ using Robust.Shared.Timing;
 
 using Content.Shared.Masonator;
 
-namespace Content.Server.Masonator.Economy;
+namespace Content.Server.Masonator;
 
 [RegisterComponent]
 public sealed partial class StationBankingDatabaseComponent : Component

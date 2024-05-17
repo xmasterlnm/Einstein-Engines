@@ -5,15 +5,17 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Masonator;
 
 //COMPONENTS
-[RegisterComponent, NetworkedComponent, Serializable, NetSerializable]
+[RegisterComponent, NetworkedComponent]
 public sealed partial class BankingConsoleComponent : Component //Empty Component to mark console
 {
+    //[DataField("name")]
+    //public string name  {get;set;} = "";
 }
 //SUPPLEMENTARY DATA STRUCTURES
 [Serializable, NetSerializable]
 public sealed class BankAccount
 {
-    public EntityUid? owner; //UID of player owning account (todo: make more advanced)
+    //public EntityUid? owner; //UID of player owning account (todo: make more advanced)
     public string name = "";
     public string password;
     public List<AccountBalance>? balances;
