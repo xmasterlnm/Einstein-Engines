@@ -19,9 +19,7 @@
             <BoxContainer
             Name="AccountsBox"
             Orientation="Horizontal"
-            VerticalExpand="True">
+            VerticalExpand="True"/>
         </BoxContainer>
-    </BoxContainer>
-    <BoxContainer Name="TEMPORARY FUCKING HOLDING AREA FOR FUNCTIONAL ELEMENTS"> <!-- MOVE THIS SHIT LATER-->
     </BoxContainer>
 </controls:FancyWindow>

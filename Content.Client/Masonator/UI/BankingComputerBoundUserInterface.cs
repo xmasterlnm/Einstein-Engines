@@ -1,6 +1,7 @@
 using System.ComponentModel;
 using Content.Client.Computer;
 using Content.Shared.IdentityManagement;
+using Content.Client.Masonator;
 using Content.Shared.Masonator;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
@@ -18,6 +19,7 @@ public sealed partial class BankingComputerBoundUserInterface : BoundUserInterfa
     private BankingComputerWindow? _menu;
     private BankingEditMenu? _editMenu;
     private BankingComputerBoundUserInterfaceState? lastState;
+    public event Action<ButtonEventArgs>? EditMenuRatifyEvent;
     public BankingComputerBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey)
     {
     }
@@ -30,10 +32,10 @@ public sealed partial class BankingComputerBoundUserInterface : BoundUserInterfa
         _menu = new BankingComputerWindow(Owner, EntMan, dependencies.Resolve<IPrototypeManager>(), spriteSystem);
         var localPlayer = dependencies.Resolve<IPlayerManager>().LocalEntity;
         var description = new FormattedMessage();
-
         string orderRequester;
 
         _editMenu = new BankingEditMenu();
+
 
         if (EntMan.TryGetComponent<MetaDataComponent>(localPlayer, out var metadata))
             orderRequester = Identity.Name(localPlayer.Value,EntMan);
@@ -46,9 +48,9 @@ public sealed partial class BankingComputerBoundUserInterface : BoundUserInterfa
 
         _menu.OnInspectAccount += InspectAccount;
 
-        _editMenu.RatifyBalanceRowEvent += (args) =>
+        EditMenuRatifyEvent += (args) =>
         { SendMessage(new BankAccountMessage(_editMenu.BuildAccount())); };
-
+        _editMenu.RatifyButton.OnPressed += (args) => { EditMenuRatifyEvent.Invoke(args); };
         _menu.OpenCentered();
     }
     private void InspectAccount(ButtonEventArgs args)

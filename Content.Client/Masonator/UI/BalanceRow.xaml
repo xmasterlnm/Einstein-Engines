@@ -13,26 +13,26 @@
                    Access="Public"
                    HorizontalExpand="True"
                    StyleClasses="LabelSubText"
-                   ClipText="True" />
+                   />
             <BoxContainer Orientation="Horizontal">
                 <LineEdit Name="Quantity"
                         PlaceHolder="Quantity"
                         Access="Public"
                         HorizontalExpand="True"
                         StyleClasses="LabelSubText"
-                        ClipText="True" />
+                        />
                 <LineEdit Name="AddSubtract"
                         Access="Public"
                         HorizontalExpand="True"
                         StyleClasses="LabelSubText"
-                        ClipText="True" />
+                        />
             </BoxContainer>
         </BoxContainer>
         <Button Name="Ratify"
                 Access="Public"
                 Text="Ratify"
                 StyleClasses="LabelSubText" />
-        <Button Name="Print"
+        <Button Name="Modify"
                 Access="Public"
                 Text="Print"
                 StyleClasses="LabelSubText" />
