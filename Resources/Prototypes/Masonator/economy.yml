@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseComputer
-  id: ComputerStationBank
-  name: station banking console
-  description: Handles the creation and elimination of station bank accounts.
+  id: BankingComputer
+  name: bankingcomputer
+  description: A controller for solar panel arrays.
   components:
   - type: Sprite
     layers:
@@ -11,13 +11,10 @@
     - map: ["computerLayerKeyboard"]
       state: generic_keyboard
     - map: ["computerLayerScreen"]
-      state: request
+      state: solar_screen
     - map: ["computerLayerKeys"]
-      state: tech_key
-  - type: AccessReader
-    access:
-    - [["HeadOfPersonnel"]]
-  - type: BankingConsole
+      state: generic_keys
+  - type: SolarControlConsole
   - type: ActivatableUI
     key: enum.MasonomicsUiKey.BankingComputerBoundUserInterface
   - type: UserInterface
@@ -25,13 +22,11 @@
     - key: enum.MasonomicsUiKey.BankingComputerBoundUserInterface
       type: BankingComputerBoundUserInterface
   - type: Computer
-    board: BankingComputerCircuitboard
+    board: SolarControlComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
-    color: "#43ccb5"
-  - type: Rotatable
-    rotateWhileAnchored: true
+    color: "#e6e227"
 
 - type: latheRecipe
   id: BankingComputerCircuitboard
