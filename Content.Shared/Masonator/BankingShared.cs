@@ -33,6 +33,7 @@ public sealed partial class BankAccountMessage : BoundUserInterfaceMessage
         account=acct;
     }
 }
+[Serializable, NetSerializable]
 public sealed class AccountBalance
 {
     public string currencyName = "default";
