@@ -32,7 +32,16 @@ public sealed partial class BankAccountMessage : BoundUserInterfaceMessage
     public BankAccount account;
     public BankAccountMessage(BankAccount acct)
     {
-        account=acct;
+        account = acct;
+    }
+}
+[Serializable, NetSerializable]
+public sealed partial class BankStringMessage : BoundUserInterfaceMessage
+{
+    public string str = "none";
+    public BankStringMessage(string inStr)
+    {
+        str = inStr;
     }
 }
 [Serializable, NetSerializable]

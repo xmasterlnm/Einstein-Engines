@@ -22,7 +22,7 @@
     - key: enum.MasonomicsUiKey.BankingComputerBoundUserInterface
       type: BankingComputerBoundUserInterface
   - type: Computer
-    board: SolarControlComputerCircuitboard
+    board: BankingComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6

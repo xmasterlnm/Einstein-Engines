@@ -12,14 +12,16 @@
             Name="AccountNameLabel"
             Text="none"/>
         </BoxContainer>
+        <Button Name="NewAccount" Access="Public" Text="New Account"/>
         <BoxContainer Orientation="Horizontal">
             <Label
-            Text="Funds:"
-            StyleClasses="LabelKeyText"/>
+                Text="Funds:"
+                StyleClasses="LabelKeyText"/>
             <BoxContainer
-            Name="AccountsBox"
-            Orientation="Horizontal"
-            VerticalExpand="True"/>
+                Name="AccountsBox"
+                Orientation="Horizontal"
+                VerticalExpand="True">
+            </BoxContainer>
         </BoxContainer>
     </BoxContainer>
 </controls:FancyWindow>

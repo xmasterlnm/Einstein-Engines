@@ -3,12 +3,20 @@
                         xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                         HorizontalExpand="True"
                         VerticalExpand="True">
-    <BoxContainer Orientation="Vertical">
-        <LineEdit Name="Inspected" Access="Public" PlaceHolder="none"/>
-        <LineEdit Name="Password" Access="Public" PlaceHolder="none"/>
-        <Button Name="DeleteButton" Access="Public" Text="Delete Account"/>
-        <Button Name="RatifyButton" Access="Public" Text="Ratify Account"/>
-    </BoxContainer>
-    <BoxContainer Name="RowHolder" Orientation="Horizontal">
+    <BoxContainer Orientation="Vertical" VerticalExpand="True">
+        <Label Text="Account Name"/>
+        <LineEdit Name="Inspected" Access="Public" PlaceHolder="name"/>
+        <Label Text="Account Password"/>
+        <LineEdit Name="Password" Access="Public" PlaceHolder="pass"/>
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+            <Button Name="AddBalance" Access="Public" Text="New Account Balance"/>
+            <LineEdit Name="NewCurrencyName" Access="Public" PlaceHolder="currency"/>
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal">
+            <Button Name="RatifyButton" Access="Public" Text="Ratify Account"/>
+            <Button Name="DeleteButton" Access="Public" Text="Delete Account"/>
+        </BoxContainer>
+        <BoxContainer Name="RowHolder" Access="Public" Orientation="Vertical" VerticalExpand="True">
+        </BoxContainer>
     </BoxContainer>
 </controls:FancyWindow>
