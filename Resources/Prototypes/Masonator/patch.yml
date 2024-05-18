@@ -1,0 +1,80 @@
+- type: entity
+  id: BookRandomStory
+  parent: BaseItem
+  name: space encyclopedia
+  description: An encyclopedia containing all the knowledge. The author of this encyclopedia is unknown.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book0 # placeholder(?). if only we have a better sprite that fits this.
+  - type: Tag
+    tags:
+    - Book
+  - type: GuideHelp
+    openOnActivation: true
+    guides:
+    - SS14
+
+- type: entity
+  parent: BaseComputer
+  id: ComputerRoboticsControl
+  name: R&D computer
+  description: A computer used to interface with R&D tools.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: rdcomp
+    - map: ["computerLayerKeys"]
+      state: rd_key
+  - type: ResearchClient
+  - type: ResearchConsole
+  - type: ActiveRadio
+    channels:
+    - Science
+  - type: TechnologyDatabase
+  - type: ActivatableUI
+    key: enum.ResearchConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.ResearchConsoleUiKey.Key
+      type: ResearchConsoleBoundUserInterface
+    - key: enum.ResearchClientUiKey.Key
+      type: ResearchClientBoundUserInterface
+  - type: ApcPowerReceiver
+    powerLoad: 1000
+    priority: Low
+  - type: Computer
+    board: ResearchComputerCircuitboard
+  - type: AccessReader
+    access: [["Research"]]
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#b53ca1"
+  - type: GuideHelp
+    guides:
+    - Science
+
+- type: entity
+  name: body bag box
+  parent: BoxCardboard
+  id: BodyBag
+  description: Contains body bags.
+  components:
+  - type: StorageFill
+    contents:
+      - id: BodyBag_Folded
+        amount: 4
+  - type: Sprite
+    layers:
+      - state: box
+      - state: bodybags
+    whitelist:
+      tags:
+        - BodyBag

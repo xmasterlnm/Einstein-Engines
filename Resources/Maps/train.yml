@@ -12118,7 +12118,7 @@ entities:
     - type: Transform
       pos: 6.380858,-242.27087
       parent: 2
-- proto: BodyBagFolded
+- proto: BodyBag_Folded
   entities:
   - uid: 2706
     components:
